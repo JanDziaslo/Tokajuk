@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Szablon strony Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+<!-- blok 1 -->
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-12 ">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    menu rozwiajane
+                </button>
+                <ul class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Strona Główna</a></li>
+                    <li><a class="dropdown-item" href="#">Galeria</a></li>
+                    <li><a class="dropdown-item" href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- blok 2 -->
+    <div class="row">
+        <div class="col-12 border">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/1.webp" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- blok 3, 4 i 5 lg  -->
+    <div class="d-none d-lg-block">
+        <div class="row">
+            <div class="col-lg-4 border">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab">Opcja 1</button>
+                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab">Opcja 2</button>
+                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab">Opcja 3</button>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-12 border">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel">Zawartość opcji 1</div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel">Zawartość opcji 2</div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel">Zawartość opcji 3</div>
+                        </div>
+                    </div>
+                    <div class="col-12 border">
+                        <p class="text-center">5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- blok 3, 4, 5 md -->
+    <div class="d-block d-lg-none">
+        <div class="row">
+            <div class="col-12 col-md-6 border">
+                <p class="text-center">3</p>
+            </div>
+            <div class="col-12 col-md-6 border">
+                <p class="text-center">4</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 border">
+                <p class="text-center">5</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- blok 6 -->
+    <div class="row">
+        <div class="col-12 border">
+            <p class="text-center">6</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
